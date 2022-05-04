@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+
+            <StackLayout Margin="15,15,15,15" Padding="6,6,6,6" Background="lightblue">
+                <Label Text="TAREA 2" HorizontalOptions="Center" TextColor="Green" FontSize="26"/>
+
+
+                <Label Text="Notas Parcial 1" HorizontalOptions="Center" TextColor="Red" FontSize="Medium"/>
+                <Label Text="Ingrese sus Notas:" TextColor="Black"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Seguimiento 1" TextColor="Black" FontSize="Medium"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                  />
+                    <Entry  Grid.Column="1" x:Name="txtSeguimiento"  Keyboard="Numeric"/>
+                    <Label Grid.Row="1" Text="Examen 1" FontSize="Medium"
+                        VerticalOptions="Center"
+                   VerticalTextAlignment="Center"/>
+                    <Entry Grid.Row="1"  Grid.Column="1" x:Name="txtExamen"  Keyboard="Numeric"/>
+                    <Label Grid.Row="2"  Text="Nota Final Parcial 1" FontSize="Medium" 
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center" TextColor="Gray"
+                  />
+
+                    <Label Grid.Row="2" Grid.Column="1"  x:Name="lblNotaParcial"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center" TextColor="#000"
+                  />
+
+                </Grid>
+
+            </StackLayout>
+
+            <StackLayout Margin="15,15,15,15" Padding="6,6,6,6" Background="lightblue">
+
+                <Label Text="Notas Parcial 2" HorizontalOptions="Center" TextColor="Red" FontSize="Medium"/>
+                <Label Text="Ingrese sus Notas:" TextColor="Black"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Seguimiento 2" FontSize="Medium"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                  />
+                    <Entry  Grid.Column="1" x:Name="txtSeguimiento2" TextColor="Black" Keyboard="Numeric"/>
+                    <Label Grid.Row="1" Text="Examen 2" FontSize="Medium"
+                        VerticalOptions="Center"
+                   VerticalTextAlignment="Center"/>
+                    <Entry Grid.Row="1"  Grid.Column="1" x:Name="txtExamen2"  Keyboard="Numeric"/>
+                    <Label Grid.Row="2"  Text="Nota Total Parcial 2" FontSize="Medium" 
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center" TextColor="Gray"
+                  />
+
+                    <Label Grid.Row="2" Grid.Column="1"  x:Name="lblNotaParcial2"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center" TextColor="#000"
+                  />
+
+                </Grid>
+
+            </StackLayout>
+
+            <StackLayout Margin="15,15,15,15" Padding="6,6,6,6" Background="Yellow">
+
+                <Label Text="NOTA FINAL:" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="26"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="" 
+                   VerticalOptions="Center"                   
+                  />
+
+                    <Label  Grid.Column="1"  x:Name="lblNota"
+                   VerticalOptions="Center" 
+                   VerticalTextAlignment="Center" TextColor="#000"
+                  />
+
+                </Grid>
+
+            </StackLayout>
+
+
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" TextColor="Green"  />
+            <Button x:Name="btnLimpiar" Text="Limpiar" Clicked="btnLimpiar_Clicked" TextColor="Black"/>
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>
